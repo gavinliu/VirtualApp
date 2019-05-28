@@ -55,6 +55,8 @@
             android:screenOrientation="portrait"
             android:theme="@style/UITheme" />
 
+        <activity android:name="tk.nox.vm.droid.ui.LauncherActivity" />
+
     </application>
 
 </manifest>
