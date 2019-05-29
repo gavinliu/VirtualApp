@@ -2,9 +2,8 @@ package tk.nox.vm.droid.ui
 
 import android.content.Context
 import android.content.Intent
-import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import io.virtualapp.R
+import tk.nox.vm.droid.ui.base.BaseActivity
 
 
 /**
@@ -13,12 +12,9 @@ import io.virtualapp.R
  * @author: gavinliu
  * @create: 2019-05-28 16:53
  **/
-class LauncherActivity : AppCompatActivity() {
+class LauncherActivity : BaseActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_launcher)
-    }
+    override fun bindLayoutId(): Int = R.layout.activity_launcher
 
     companion object {
 

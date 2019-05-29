@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.support.multidex.MultiDexApplication;
 
+import com.blankj.utilcode.util.Utils;
 import com.flurry.android.FlurryAgent;
 import com.lody.virtual.client.core.VirtualCore;
 import com.lody.virtual.client.stub.VASettings;
@@ -42,6 +43,7 @@ public class VApp extends MultiDexApplication {
     @Override
     public void onCreate() {
         gApp = this;
+        Utils.init(this);
         super.onCreate();
         VirtualCore virtualCore = VirtualCore.get();
         virtualCore.initialize(new VirtualCore.VirtualInitializer() {
